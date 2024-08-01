@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FoodieBite - Bootstrap Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>FoodieBite</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
+                                href="#tab-1">
+                                <!-- <i class="fa fa-coffee fa-2x text-primary"></i> -->
+                                <img src="pizza.png" height="32">
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Pizza</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <!-- <img src="sandwich3.png" height="46"> -->
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Sandwich</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-3">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Burger</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-4">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <!-- <img src="meal.jpg" class="imgg" height="72"> -->
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Meal</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-5">
+                                <!-- <i class="fa fa-hamburger fa-2x text-primary"></i> -->
+                                <img src="coffee.png" height="32">
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Shakes</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-6">
+                                <!-- <i class="fa fa-hamburger fa-2x text-primary"></i> -->
+                                <img src="dessert1.jpg" height="36">
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Desserts</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.recipetineats.com/wp-content/uploads/2023/05/Garlic-cheese-pizza_9.jpg?w=500&h=500&crop=1" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Classic Cheese</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(cheese and more cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTDFHYX1oK0qU-fh2z8Wf_jmG9D59hxjJKQ&usqp=CAU" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mexican</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(refried beans, red sauce, onion, pepper, mushroom, cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Special Veggie</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(thin crust, cheese, capsicum, tomato, paneer, onion, corn, jalapeno, black olives)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://italianstreetkitchen.com/au/wp-content/uploads/2022/10/interrupts-_0000_0O2A2472-768x511.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Italian Veg</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(cheese, onion, tomato, capsicum, italian special sauce)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://sipbitego.com/wp-content/uploads/2021/08/Pepperoni-Pizza-Recipe-Sip-Bite-Go-500x500.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Pepperoni</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(mozzarella cheese, pepperoni)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/paneer-pizza-recipe-1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Paneer</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(cheese, onion, tomato, capsicum, panner,cream)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://greenmess.in/wp-content/uploads/2023/06/cheese-corn-pizza-1.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cheese and Corn </span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(mozzarella cheese, corn)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://pbs.twimg.com/media/EyITFMQVoAopzNm.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Pepper Bbq </span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(sweet BBQ sauce, red onions, cilantro, cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://static.toiimg.com/thumb/54714340.cms?imgsize=458099&width=800&height=800" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Veggie Classic</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(vegetables and sauces)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/07/corn-sandwich-recipe-1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cheese Corn</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(cheese, corn, vegetables)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://digboimart.com/wp-content/uploads/2023/10/lllllll.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Peri Peri</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(peri peri sauce, vegetables and cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGok5Peyi-hhPPt9Z6qFpLUqZeb_ABytA_Hw&usqp=CAU" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Schezwan Cheese Grilled</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(schezwan sauce, cheese, vegetables)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://static.toiimg.com/thumb/53520345.cms?imgsize=241792&width=800&height=800" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Spicy Paneer</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(Paneer, spices, veggies and cilantro)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlTlksoF7GRI8uBqm8-TmnhpyrnkSx5dQ4w&usqp=CAU" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Crispy Aloo</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(mashed spiced potatoes and cheese(optional))</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.cookwithmanali.com/wp-content/uploads/2015/01/Bombay-Sandwich-With-Cheese-500x375.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Bombay Special</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(butter, potatoes, tomatoes, cucumbers, onions, grated cheese, and chaat masala)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.cookwithmanali.com/wp-content/uploads/2017/09/Spinach-Corn-Sandwich-300x300.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Spinach and Corn</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(Spinach, corn and sauces)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.dotpe.in/longtail/item_thumbnails/6385438/tBgGReGg.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Classic Veg</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(creamy mayonnaise, crispy aloo tikki)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://5.imimg.com/data5/PI/VK/GLADMIN-27552342/double-aloo-tikki-burger.png" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Double Tikki Cheese</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(lettuce, tomatoes, onions, mustard, classic mayo)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.superbread.com/img/recipe/cheese-burger.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cheese Lava</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(cheese cheese and more cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://lh3.googleusercontent.com/aiIpHdobOqXH8Ex3ZgRRMfHc5PKOXLziVwT3Hs_wgWP_CQgldSjrXrqIEEp2wzuQE8QYXtZlie3mPAxzrIaejahp3VxzJfoqwX4WGoZQ" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Paneer Makhani</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(veg patty,buttery makhani sauce, topped with veggies and paneer)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2016/02/veg-burger-recipe-1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Sweet Chilli Sauce</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(chilli sauce, cheese, veg patty)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://img.thecdn.in/273385/1670095919614_SKU-0496_0.jpg?" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Aloo Achari</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(achari masala, spiced aloo, sauces and cheese)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://dishingouthealth.com/wp-content/uploads/2023/08/SpicedLentilBurgers_Styled1-1-500x375.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Onion</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(caramelized onions, garlic mayo and green onions)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://rclfoods.com/wp-content/uploads/2020/03/creamy-chicken.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Creamy Mushroom</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(mushroom, garlic mayo, cheese slice and veggies)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <a href="#tab-7"><span>Snacks</span></a>
+                                                <!-- <span class="text-primary">$115</span> -->
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <a href="#tab-8"><span>Vegetables</span></a>
+                                                <!-- <span class="text-primary">$115</span> -->
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <a href="#tab-9"><span>Roti-Naan</span></a>
+                                                <!-- <span class="text-primary">$115</span> -->
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <a href="#tab-10"><span>Rice</span></a>
+                                                <!-- <span class="text-primary">$115</span> -->
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <a href="#tab-11"><span>South Indian</span></a>
+                                                <!-- <span class="text-primary">$115</span> -->
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://imgmedia.lbb.in/media/2020/05/5eb0ee85c46f0255d157b5c1_1588653701620.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Royal Rooh Afza</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(royal feeling of rose petals and cashew)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="data:image/jpeg;base64,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" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Oreo Punch</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(sweetness of oreo cookies with milk)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="data:image/jpeg;base64,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" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Strawberry</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(3 scoops of strawberry ice cream, fresh strawberries) </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_10203_71571.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Fruity Pebble</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(3 scoops of vanilla icecream, splash of milk, fruity pebbles)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://bakingmischief.com/wp-content/uploads/2020/04/caramel-milkshake-image-square.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Caramel</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(splash of milk, caramel sauce, pralines)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.gestationaldiabetes.co.uk/wp-content/uploads/2023/06/thick-chocolate-shake1-500x500.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chocolate chip</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(vanilla ice cream, sugar-free chocolate syrup, choco chips)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.alphonsomangoes.online/wp-content/uploads/2023/12/Website-image1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Alphonso Mango</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(sweetness of alphonso mango pulp with milk)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/assets/search/usecase/blueberry_shake_zdish.png" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Blueberry</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">(whipped cream, blueberries, almond milk)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-6" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="data:image/jpeg;base64,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" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ras Malai</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://carveyourcraving.com/wp-content/uploads/2020/10/Easiest-homemade-rabdi-recipe.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Rabdi</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Gulabjamun</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.chitalebandhu.in/cdn/shop/files/Rasgulla-Image-_3_1024x1024.jpg?v=1697398551" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Rasgulla</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://static.toiimg.com/thumb/90233653.cms?imgsize=77796&width=800&height=800" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Malpua</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/delicacies-on-the-plate---pallavi's-kitchen20170227231430829.jpeg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Shrikhand</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://5.imimg.com/data5/SELLER/Default/2020/9/MU/CF/BQ/395272/whatsapp-image-2020-09-08-at-15-49-20-500x500.jpeg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Rajbhog</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="https://www.bigbasket.com/media/uploads/p/l/800457977_2-bhavnagari-sweet-sweets-ghevar-malai.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ghevar</span>
+                                                <span class="text-primary">$115</span>
+                                            </h5>
+                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo
+                                                diam</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
